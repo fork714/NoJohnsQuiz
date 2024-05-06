@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS, Custom Font, and External CSS Links  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="NoJohns.css">
+</head>
+<body>
+<div class="container">
+    <!-- Main Application Container -->
+    <div class="app">
+        <!-- Progress Bar -->
+        <div class="progress">
+            <div id="progress-bar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <!-- Header/Quiz Title + Subtitle -->
+        <h1 class="jumbotron text-center">
+            <b>NO JOHNS:</b>
+            <br>
+            <span class="subtitle"><i><b>A Super Smash Bros. Melee Knowledge Quiz...</b></i></span>
+        </h1>
+        <!-- Username Input Form -->
+        <div id="username-form" class="text-center">
+            <input type="text" id="username-input" placeholder="Enter your username">
+            <button id="submit-username" class="btn btn-primary">Submit</button>
+        </div>
+        <!-- User Greeting -->
+        <div id="user-greeting" class="text-center" style="display: none;"></div>
+        <!-- Quiz Section -->
+        <div class="quiz panel panel-default" style="display: none;">
+            <div class="panel-body text-center">
+                <!-- Question Display -->
+                <h2 id="question"></h2>
+                <!-- Answer Buttons -->
+                <div id="answer-buttons" class="btn-group-vertical mx-auto" role="group" aria-label="...">
+                    <!-- Answer buttons dynamically generated here -->
+                </div>
+            </div>
+            <!-- Footer with 'Next Question' Button -->
+            <div class="panel-footer text-center">
+                <button id="next-btn" class="btn btn-primary">Next Question</button>
+            </div>
+        </div>
+        <!-- Feedback form -->
+        <div id="feedback-form" class="feedback-form">
+            <h2>Got something mean to say?</h2>
+            <form id="feedback-form">
+                <label for="feedback-input">Submit it here and I won't read it!:</label><br>
+                <textarea id="feedback-input" name="feedback-input" rows="4" cols="50"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- Reset Button -->
+    <button id="reset-button" class="reset-button"><i class="fas fa-redo-alt"></i></button>
+</div>
+<!-- Bootstrap JS, jQuery, and external JS Links -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="NoJohns.js"></script>
+</body>
+</html>
+
